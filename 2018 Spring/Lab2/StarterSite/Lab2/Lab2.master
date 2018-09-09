@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Lab2.master.cs" Inherits="Lab2_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+    <asp:Menu ID="Lab2NavMenu" runat="server" CssClass="lab2NavMenu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="Category.aspx" Text="Categories" /> 
+                <asp:MenuItem NavigateUrl="Users.aspx" Text="Users" />
+                <asp:MenuItem NavigateUrl="TicketsAdd.aspx" Text="Tickets Add" />
+                <asp:MenuItem NavigateUrl="TicketsView.aspx" Text="Tickets View" />
+
+            </Items>
+        </asp:Menu>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
